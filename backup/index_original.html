@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avijeet's Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LH67V9T5T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9LH67V9T5T');
+</script>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/LinkedIn.jpg" alt="Avijeet Ranawat" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Avijeet Ranawat">Avijeet Ranawat</h1>
+
+          <p class="title">Machine Learning Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:aranawat3@gatech.edu" class="contact-link">aranawat3@gatech</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+14042039047" class="contact-link">+1 (404) 203-9047</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Atlanta, Georgia, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/avijeet-ranawat" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+		  
+		  <li class="social-item">
+            <a href="https://www.github.com/AvijeetRanawat" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+		  
+
+          <li class="social-item">
+            <a href="https://www.twitter.com/aviranawat" class="social-link" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/avijeetranawat" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+		  
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+			Experienced professional with over 5 years of full commitment to the fascinating realm of machine learning. 
+			Throughout this journey, was privileged to work on impactful projects that cut across diverse industries, wearing multiple
+			hats, seamlessly transitioning from the intricate role of Data Scientist to the hands-on responsibilities of a Machine
+			Learning Engineer. A confident problem solver and go-getter, always ready to tackle the next challenge. Getting
+			involved with cutting-edge AI research, exploring frontiers like LLM and Generative AI. As this is not merely a
+			job; it’s a passion, a commitment to pushing the boundaries of what’s possible in the ever-evolving field of machine
+			learning.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Expertise In</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="Natural Language Processing" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Natural Language Processing</h4>
+
+                <p class="service-item-text">
+                Developed algorithms and models to enhance computers ability to comprehend,
+				analyze, and generate human language for various applications such as machine translation, sentiment analysis, chatbots etc.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Machine Learning Development" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning Development</h4>
+
+                <p class="service-item-text">
+                Designed and implemented algorithms that enabled the model to learn patterns from data,
+				make predictions, and continually improve its performance through iterative training processes.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Prompt Engineering" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Prompt Engineering</h4>
+
+                <p class="service-item-text">
+                  Crafted and refined contextually relevant input queries to elicit desired responses from large language models.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="Computer Vision" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Computer Vision</h4>
+
+                <p class="service-item-text">
+                  Developed algorithms and models that enabled machines to interpret and make sense of visual information
+				  from the world involving tasks such as image recognition, object detection, segmentation etc.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+        <!--
+          - companies
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Affiliations</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+			  <a href="https://www.gatech.edu" class="clients-item" target="_blank">
+                <img src="./assets/images/georgia_tech.png" alt="university logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://fractal.ai" class="clients-item" target="_blank">
+                <img src="./assets/images/fractal.png" alt="company logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.tcs.com" class="clients-item" target="_blank">
+                <img src="./assets/images/tcs.png" alt="company logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.rgpv.ac.in" class="clients-item" target="_blank">
+                <img src="./assets/images/rgpv.png" alt="university logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+     <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Georgia Institute of Technology</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="timeline-text">
+              Master of Science in Computer Science with Specialization in Machine Learning
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">RGPV University</h4>
+
+              <span>2014 — 2018</span>
+
+              <p class="timeline-text">
+				Bachelor of Engineering in Computer Science with Honours Degree
+				
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Scientist</h4>
+
+              <span>2021 — 2023</span>
+
+              <p class="timeline-text">
+				<ul class="timeline-text">
+					<li>Leveraged the power of TensorFlow Hub and NLP embeddings to achieve full automation, hitting a sweet 100% in generating marketing insights effortlessly.</li>
+					<li>Got hands-on with a mini-batch k-means clustering model for our unsupervised learning needs, supercharging training speeds.</li>
+					<li>Skillfully employed Regex for meticulous data cleaning, deftly eliminating unwelcome characters and ensuring data purity.</li>
+					<li>Translated raw text into machine-understandable language using sophisticated pretrained embeddings, sparing us the challenges of starting from square one.</li>
+					<li>Made parallel computing a breeze across different nodes using an in-house Docker like tool, keeping things smooth and distributed.</li>
+					<li>Implemented Google SQL to turbocharge data engineering operations, witnessing a significant 60% acceleration in our workflow.</li>
+					<li>Elevated data visualization to an art form with plotly and altair-viz, creating a client experience that was not just informative but downright delightful.</li>
+					<li>Built a rock-solid code base on the Google Cloud Platform, making work of processing billions of records with a jaw-dropping 40% reduction in processing time.</li>
+					<li>Led the development of a robust causal impact analysis for Sony PlayStation, diving deep into the world of game analytics to understand how tournaments shake up the revenue landscape.</li>
+					<li>Employed a mix of models, including XgBoost, Random Forest, Decision trees, for feature selection to enhance the system’s capabilities.</li>
+					<li>Conducted A/B testing meticulously, unraveling insights from test vs control scenarios to inform strategic decisions.</li>
+					<li>Ensured statistical integrity by cross-verifying results through T-tests, emphasizing the importance of robust data analysis.</li>
+					<li>Leveraged Microsoft Office tools, particularly Power BI, to present complex findings in a clear and compelling manner to our clients.</li>
+					<li>Embraced the flexibility of Scala, optimizing the system for scalability and efficient multitasking.</li>
+					<li>Incorporated NoSQL databases seamlessly, enhancing data storage and retrieval methods for improved operational efficiency.</li>
+				</ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Machine Learning Engineer</h4>
+
+              <span>2019 — 2021</span>
+			  
+			<p class="timeline-text">
+				<ul class="timeline-text">
+					<li>Initiated the journey by delving into the classics, exploring Linear Regression, Logistic Regression, and Support Vector Machines to test the waters and establish a foundational understanding.</li>
+					<li>Revolutionized the support team’s workflow, wielding the power of a Random Forest classification model to enchantingly slash their manual workload by an impressive 80% through the wonders of Supervised learning.</li>
+					<li>Got crafty and built a custom entity recognizer using the spaCy library – because sometimes, off-the-shelf just won’t cut it.</li>
+					<li>Tackled class imbalance head-on with the SMOTE technique. No imbalances allowed on my watch.</li>
+					<li>Conducted a symphony of APIs using the dynamic duo: Django and Flask REST framework to get harmonious deployments.</li>
+					<li>Weaved a Dialog Flow Chatbot into our internal toolkit, making knowledge retrieval and Q/A a breeze.</li>
+					<li>Did a bit of number magic with feature scaling, courtesy of our trusty standard scalar.</li>
+					<li>Delved into the realm of possibilities by experimenting with an MLP Neural Networks model, seeking to harness the potential of deep learning.</li>
+					<li>Played detective with missing data, bringing in KNN imputation to solve the mystery.</li>
+					<li>Got wordy with data preprocessing, removing stop words and giving our words a good lemmatization scrub with the help of NLTK.</li>
+					<li>Assumed the role of an engineering virtuoso, conjuring up new features like counting POS tags, calculating the average length of words, and more through some nifty feature engineering.</li>
+				</ul>
+              </p>
+
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Assistant System Engineer</h4>
+
+              <span>2018 — 2019</span>
+			  
+			<p class="timeline-text">
+			<ul class="timeline-text">
+				<li>Embarked on thrilling projects for a major player in the finance world – J.P. Morgan Chase, right in the heart of their Home Mortgage division.</li>
+				<li>Wielded the power of Java to craft automated regression test scripts, turning the tedious Loan Application processes into a smoothly orchestrated performance.</li>
+				<li>Revolutionized testing efforts by seamlessly integrating the TestNg framework, orchestrating a spectacular 75% reduction in testing time.</li>
+				<li>Played data maestro with MySQL and MongoDB databases, ensuring that data management was as smooth as a well-played symphony.</li>
+				<li>Infused a touch of JavaScript, HTML, and CSS expertise to enchantingly enhance the user interfaces and functionality of our web app, because we believe in the significance of an exceptional user experience.</li>
+				<li>Showcased not just technical prowess but also outstanding communication and presentation skills, leaving a lasting impression during client interactions.</li>
+
+			</ul>
+			</p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+			
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Deep Learning</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+			
+			<li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">PyTorch</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+			
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SQL</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="all">
+              <a href="https://github.com/AvijeetRanawat/Hateful-memes-DL-project/tree/main/Submission" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/hateful_meme.png" alt="hateful_memes" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Hateful Memes Detection</h3>
+
+                <p class="project-category">Multimodal model</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="all">
+              <a href="https://github.com/AvijeetRanawat/Movie-Recommendation" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/movie_recommendation.png" alt="movie_recommendation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Movie Recommendation</h3>
+
+                <p class="project-category">Recommenation System</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="all">
+              <a href="https://github.com/AvijeetRanawat/StockPricePrediction" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/stock_prediction.png" alt="stocks_prediction" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Stock Price Prediction</h3>
+
+                <p class="project-category">Time Series Modelling</p>
+
+              </a>
+            </li>
+   
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27660.573981363217!2d-84.388058!3d33.7490!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f503a52b080a89%3A0x7b9b0e6d08d8e012!2sAtlanta%2C%20GA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+		<section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
