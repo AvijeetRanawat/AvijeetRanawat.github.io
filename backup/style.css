@@ -836,51 +836,25 @@ main {
   margin-left: -1em; /* Adjust the margin as needed for spacing */
 }
 
+
+
+
+
+
 /**
  * skills 
  */
 
  .skills-title {
   margin-bottom: 20px;
-  position: relative; /* Add this line for positioning */
-}
-
-/* Add this block for the filling animation */
-.skills-title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: var(--text-gradient-yellow);
-  border-radius: 10px;
-  transition: width 0.3s ease; /* Adjust the duration as needed */
-}
-
-.skills-title:hover::before {
-  width: 100%;
 }
 
 .skills-list {
   padding: 20px;
 }
 
-.skills-item:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-.skill .title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
-}
-
-.skill .title-wrapper data {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
+.skills-item {
+  position: relative;
 }
 
 .skill-progress-bg {
@@ -888,12 +862,19 @@ main {
   width: 100%;
   height: 8px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .skill-progress-fill {
   background: var(--text-gradient-yellow);
   height: 100%;
   border-radius: inherit;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.skills-item:hover .skill-progress-fill {
+  width: 100%;
 }
 
 
