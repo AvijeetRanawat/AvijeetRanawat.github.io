@@ -840,12 +840,35 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+ .skills-title {
+  margin-bottom: 20px;
+  position: relative; /* Add this line for positioning */
+}
 
-.skills-list { padding: 20px; }
+/* Add this block for the filling animation */
+.skills-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--text-gradient-yellow);
+  border-radius: 10px;
+  transition: width 0.3s ease; /* Adjust the duration as needed */
+}
 
+.skills-title:hover::before {
+  width: 100%;
+}
 
-.skills-item:not(:last-child) { margin-bottom: 15px; }
+.skills-list {
+  padding: 20px;
+}
+
+.skills-item:not(:last-child) {
+  margin-bottom: 15px;
+}
 
 .skill .title-wrapper {
   display: flex;
