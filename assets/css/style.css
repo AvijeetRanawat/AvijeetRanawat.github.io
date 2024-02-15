@@ -750,11 +750,11 @@ main {
 
 .clients-item img {
   width: 100%;
-  filter: grayscale(1);
+  filter: brightness(100%);
   transition: var(--transition-1);
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.clients-item img:hover { filter: brightness(120%); }
 
 
 
@@ -796,7 +796,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: goldenrod;
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -845,7 +845,7 @@ main {
  * skills 
  */
 
- .skills-title {
+.skills-title {
   margin-bottom: 20px;
 }
 
@@ -866,15 +866,17 @@ main {
 }
 
 .skill-progress-fill {
-  background: var(--text-gradient-yellow);
+  background: linear-gradient(to right, var(--text-gradient-yellow-lighter) 0%, var(--text-gradient-yellow) 100%, var(--text-gradient-yellow-brighter) 100%);
   height: 100%;
   border-radius: inherit;
-  width: 0;
+  width: 100%; /* Change width to 100% */
   transition: width 0.3s ease;
+  color: goldenrod; /* Change color to goldenrod */
 }
 
 .skills-item:hover .skill-progress-fill {
-  width: 100%;
+  width: 0; /* Change width to 0 on hover */
+  transition: width 0.3s ease;
 }
 
 
@@ -1407,6 +1409,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     align-items: flex-start;
     gap: 18px;
     padding: 30px;
+    transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+  }
+
+  .service-item:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 0 10px goldenrod; /* Add box-shadow to create a highlight effect */
   }
 
   .service-icon-box {
@@ -1414,7 +1421,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-top: 5px;
   }
 
-  .service-content-box { text-align: left; }
+  .service-content-box {
+    text-align: left;
+  }
+
+  
 
   /* testimonials */
 
@@ -1580,14 +1591,24 @@ textarea.form-input::-webkit-resizer { display: none; }
     gap: 30px 15px;
   }
 
+  .contacts-list:hover {
+    box-shadow: 0 0 10px 5px goldenrod;
+  }
+
+
 
 
   /**
    * NAVBAR
    */
 
-  .navbar-link { --fs-8: 15px; }
+  .navbar-link {
+    --fs-8: 15px;
+  }
 
+  .navbar-link:hover {
+    box-shadow: 0 0 10px 5px goldenrod;
+  }
 
 
   /**
