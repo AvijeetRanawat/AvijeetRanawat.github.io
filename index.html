@@ -163,9 +163,9 @@
             <button class="navbar-link  active" data-nav-link>About</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+    <li class="navbar-item">
+      <button class="navbar-link" data-nav-link="resume">Resume</button>
+    </li>
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
@@ -175,15 +175,23 @@
             <button class="navbar-link" data-nav-link>Blog</button>
           </li>
 
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
         </ul>
 
       </nav>
-
+	  
+      
+      <!--
+        - #RESUME
+      -->
+			  
+		<article id="resumeDisplay" class="resume" style="display:none;">
+		  <header>
+			<h2>Resume</h2>
+		  </header>
+		  <section style="height: 600px;">
+			<iframe style="width: 100%; height: 100%;" frameborder="0"></iframe>
+		  </section>
+		</article>
 
 
 
@@ -365,657 +373,6 @@
       </article>
 
 
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Georgia Institute of Technology</h4>
-
-              <span>2021 — 2024</span>
-
-              <p class="timeline-text">
-                Master of Science in Computer Science with Specialization in Machine Learning
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">RGPV University</h4>
-
-              <span>2014 — 2018</span>
-
-              <p class="timeline-text">
-                Bachelor of Engineering in Computer Science with Honours Degree
-
-              </p>
-
-            </li>
-
-          </ol>
-
-        <!--
-        - #Experience
-      -->
-      <section class="timeline">
-
-        <div class="title-wrapper">
-          <div class="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
-          </div>
-          <h3 class="h3">Experience</h3>
-        </div>
-      
-        <ol class="timeline-list">
-      
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Fractal Analytics [Data Scientist]</h4>
-            <span>Nov 2021 — Jul 2023</span>
-            <p class="timeline-text">
-              <h5 class="h5 timeline-item-title">Insights Generation:</h5>
-              <ul class="timeline-text main-list">
-                <li>Objective: Provide monthly insights on trending search topics to enhance marketing strategies.</li>
-                <li>Approach:
-                  <ul class="timeline-text sub-list">
-                    <li>Engineered an advanced unsupervised learning model leveraging <strong>Python</strong>, <strong>PyTorch</strong>, and <strong>Transformer Embeddings</strong> to uncover significant patterns within billions of search records.</li>
-                    <li>Deployed the model on <strong>Docker</strong> containers, orchestrated with <strong>Kubernetes</strong>, and hosted on <strong>Google Cloud Platform (GCP)</strong>.</li>
-                    <li>Performed data engineering tasks using <strong>SQL</strong> and <strong>BigQuery</strong>.</li>
-                  </ul>
-                </li>
-                <li>Outcome: Achieved a 60% increase in client engagement by providing actionable insights into trending search topics.</li>
-              </ul>
-              <h5 class="h5 timeline-item-title">Causal Impact Analysis:</h5>
-              <ul class="timeline-text main-list">
-                <li>Objective: Utilize causal impact analysis to measure the impact of business activities on revenue generation for gaming data.</li>
-                <li>Approach:
-                  <ul class="timeline-text sub-list">
-                    <li>Performed <strong>ETL</strong> and data preprocessing using <strong>Python</strong>, <strong>Pandas</strong>, and <strong>PySpark</strong>.</li>
-                    <li>Applied statistical methods, including <strong>A/B testing</strong>, <strong>hypothesis testing</strong>, and <strong>T-tests</strong>, for causal impact measurement.</li>
-                    <li>Visualized results using <strong>matplotlib</strong>, <strong>seaborn</strong>, and <strong>PowerBI</strong>.</li>
-                  </ul>
-                </li>
-                <li>Outcome: Enabled clients to strategize effectively, resulting in a 30% cost saving.</li>
-              </ul>
-            </p>
-          </li>
-      
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Tata Consultancy Services [Machine Learning Engineer]</h4>
-            <span>Jul 2018 — Oct 2021</span>
-            <p class="timeline-text">
-              <h5 class="h5 timeline-item-title">Query Categorization:</h5>
-              <ul class="timeline-text main-list">
-                <li>Objective: Enhance customer support efficiency by automating query categorization using AI.</li>
-                <li>Approach:
-                  <ul class="timeline-text sub-list">
-                    <li>Built an NLP-based custom entity recognizer using <strong>Python</strong>, <strong>SpaCy</strong>, and <strong>NLTK</strong>.</li>
-                    <li>Implemented a <strong>Random Forest</strong> model for issue classification.</li>
-                    <li>Developed an API service using <strong>Django</strong> and <strong>Flask</strong> frameworks.</li>
-                  </ul>
-                </li>
-                <li>Outcome: Achieved a 50% reduction in manual ticketing processes and significantly improved customer satisfaction.</li>
-              </ul>
-            </p>
-          </li>
-      
-        </ol>
-      </section>
-      
-            
-              <div class="title-wrapper">
-                <div class="icon-box">
-                  <ion-icon name="construct-outline"></ion-icon>
-                </div>
-                <h3 class="h3">Projects</h3>
-              </div>
-            
-              <ol class="timeline-list">
-            
-                <li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">GPTLens (AI in Finance, Blockchain - Research Project)</h4>
-                  <p class="timeline-text">
-                    <ul class="timeline-text">
-                      <li><strong>Objective:</strong> Create an LLM-based vulnerability detection system for smart contract codes.</li>
-                      <li><strong>Approach:</strong> Developed GAN-based adversarial technique, incorporating intermediate Chain-of-Thoughts to enhance LLM reasoning.</li>
-                      <li><strong>Outcome:</strong> Successfully identified and mitigated potential vulnerabilities in smart contracts with OpenAI ChatGPT.</li>
-                    </ul>
-                  </p>
-                </li>
-            
-                <li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">StrategAI (AI in Sports, Football - Personal Project)</h4>
-                  <p class="timeline-text">
-                    <ul class="timeline-text">
-                      <li><strong>Objective:</strong> Build an AI strategy planner leveraging live data and historical stats to create dynamic team tactics.</li>
-                      <li><strong>Approach:</strong> Utilized YOLO model for real-time player tracking and integrated it with open-source Llama LLM for strategy generation.</li>
-                      <li><strong>Outcome:</strong> Enabled real-time, dynamic team strategy planning for sports.</li>
-                    </ul>
-                  </p>
-                </li>
-            
-                <li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">Hateful Memes Detection (AI in Entertainment, Social Media - Course Project)</h4>
-                  <p class="timeline-text">
-                    <ul class="timeline-text">
-                      <li><strong>Objective:</strong> Create a multimodal AI model to detect and filter hateful content in memes.</li>
-                      <li><strong>Approach:</strong> Employed the multimodal ViLBERT model to analyze combined embeddings of images and text. Leveraged <strong>PyTorch</strong> and MMF framework for efficient training and inference on GPU.</li>
-                      <li><strong>Outcome:</strong> Successfully identified and filtered hateful content within memes.</li>
-                    </ul>
-                  </p>
-                </li>
-            
-              </ol>
-            
-            </section>
-      
-
-        <!--
-        - #SKILLS
-      -->
-
-
-
-        <section class="skill">
-          <!-- Main Skills Heading -->
-          <h3 class="h3 skills-title">Skills</h3>
-
-          <div class="split-container">
-                <!-- Programming Category -->
-                <div class="split-item" id="programming-category">
-                  <!-- Programming Heading -->
-                  <h4 class="h4" style="margin-bottom: 10px;">Programming</h4>
-                  <!-- Subcategories within Programming Category -->
-                  <ul class="subcategories">
-                    <!-- Python Subcategory -->
-                    <li class="skills-item subcategory">
-                      <div class="title-wrapper">
-                        <h5 class="h5">Python</h5>
-                      </div>
-                      <div class="skill-progress-bg">
-                        <div class="skill-progress-fill programming-progress"></div>
-                      </div>
-                    </li>
-                    <!-- SQL Subcategory -->
-                    <li class="skills-item subcategory">
-                      <div class="title-wrapper">
-                        <h5 class="h5">SQL</h5>
-                      </div>
-                      <div class="skill-progress-bg">
-                        <div class="skill-progress-fill programming-progress"></div>
-                      </div>
-                    </li>
-                    <!-- Java Subcategory -->
-                    <li class="skills-item subcategory">
-                      <div class="title-wrapper">
-                        <h5 class="h5">Java</h5>
-                      </div>
-                      <div class="skill-progress-bg">
-                        <div class="skill-progress-fill programming-progress"></div>
-                      </div>
-                    </li>
-                    <!-- C/C++ Subcategory -->
-                    <li class="skills-item subcategory">
-                      <div class="title-wrapper">
-                        <h5 class="h5">C/C++</h5>
-                      </div>
-                      <div class="skill-progress-bg">
-                        <div class="skill-progress-fill programming-progress"></div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-
-            <!-- NLP Category -->
-            <div class="split-item" id="nlp-category">
-              <!-- NLP Heading -->
-              <h4 class="h4" style="margin-bottom: 10px;">Natural Language Processing</h4>
-              <!-- Subcategories within NLP Category -->
-              <ul class="subcategories">
-                <!-- Large Language Models Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">Large Language Models</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill nlp-progress"></div>
-                  </div>
-                </li>
-                <!-- spaCy -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                  <h5 class="h5">spaCy</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                  <div class="skill-progress-fill nlp-progress"></div>
-                  </div>
-                </li>
-                <!-- Langchain Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                  <h5 class="h5">Langchain</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                  <div class="skill-progress-fill nlp-progress"></div>
-                  </div>
-                </li>
-                <!-- NLTK -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">NLTK</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill nlp-progress"></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- Framework Category -->
-            <div class="split-item" id="framework-category">
-              <!-- Framework Heading -->
-              <h4 class="h4" style="margin-top: 25px; margin-bottom: 10px;">Framework</h4>
-              <!-- Subcategories within Framework Category -->
-              <ul class="subcategories">
-                <!-- PyTorch Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">PyTorch</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill framework-progress"></div>
-                  </div>
-                </li>
-                <!-- TensorFlow Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">TensorFlow</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill framework-progress"></div>
-                  </div>
-                </li>
-                <!-- JAX Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">JAX</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill framework-progress"></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-            <div class="split-container">
-              <!-- Deep Learning Category -->
-              <div class="split-item" id="deep-learning-category">
-                <!-- Deep Learning Heading -->
-                <h4 class="h4" style="margin-top: 20px; margin-bottom: 10px;">Deep Learning</h4>
-                <!-- Subcategories within Deep Learning Category -->
-                <ul class="subcategories">
-                  <!-- Transformers Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">Transformers</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill deep-learning-progress"></div>
-                    </div>
-                  </li>
-                  <!-- Neural Network Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">Neural Networks</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill deep-learning-progress"></div>
-                    </div>
-                  </li>
-                  <!-- CNN Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">Convolutional Neural Network (CNN)</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill deep-learning-progress"></div>
-                    </div>
-                  </li>
-                  <!-- RNN Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">Recurrent Neural Network (RNN)</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill deep-learning-progress"></div>
-                    </div>
-                  </li>
-                  <!-- LSTM Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">Long Short Term Memory (LSTM)</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill deep-learning-progress"></div>
-                    </div>
-                  </li>
-                  <!-- AutoML Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">AutoML</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill deep-learning-progress"></div>
-                    </div>
-                  </li>
-                  <!-- Generative AI Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">Generative AI</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill deep-learning-progress"></div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-                            <!-- Libraries Category -->
-                            <div class="split-item" id="libraries-category">
-                              <!-- Libraries Heading -->
-                              <h4 class="h4" style="margin-top: 10px; margin-bottom: 10px;">Libraries</h4>
-                              <!-- Subcategories within Libraries Category -->
-                              <ul class="subcategories">
-                                <!-- Pandas Subcategory -->
-                                <li class="skills-item subcategory">
-                                  <div class="title-wrapper">
-                                    <h5 class="h5">Pandas</h5>
-                                  </div>
-                                  <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill libraries-progress"></div>
-                                  </div>
-                                </li>
-                                <!-- NumPy Subcategory -->
-                                <li class="skills-item subcategory">
-                                  <div class="title-wrapper">
-                                    <h5 class="h5">NumPy</h5>
-                                  </div>
-                                  <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill libraries-progress"></div>
-                                  </div>
-                                </li>
-                                <!-- Matplotlib Subcategory -->
-                                <li class="skills-item subcategory">
-                                  <div class="title-wrapper">
-                                    <h5 class="h5">Matplotlib</h5>
-                                  </div>
-                                  <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill libraries-progress"></div>
-                                  </div>
-                                </li>
-                                <!-- Seaborn Subcategory -->
-                                <li class="skills-item subcategory">
-                                  <div class="title-wrapper">
-                                    <h5 class="h5">Seaborn</h5>
-                                  </div>
-                                  <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill libraries-progress"></div>
-                                  </div>
-                                </li>
-                                <!-- PySpark Subcategory -->
-                                <li class="skills-item subcategory">
-                                  <div class="title-wrapper">
-                                    <h5 class="h5">PySpark</h5>
-                                  </div>
-                                  <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill libraries-progress"></div>
-                                  </div>
-                                </li>
-                              </ul>
-                            </div>
-              <!-- Big Data & Cloud Category -->
-              <div class="split-item" id="big-data-cloud-category">
-                <!-- Big Data & Cloud Heading -->
-                <h4 class="h4" style="margin-top: 10px; margin-bottom: 10px;">Big Data & Cloud</h4>
-                <!-- Subcategories within Big Data & Cloud Category -->
-                <ul class="subcategories">
-                  <!-- Hadoop Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">Hadoop</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill big-data-cloud-progress"></div>
-                    </div>
-                  </li>
-                  <!-- Spark Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">Spark</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill big-data-cloud-progress"></div>
-                    </div>
-                  </li>
-                  <!-- Hive Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">Hive</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill big-data-cloud-progress"></div>
-                    </div>
-                  </li>
-                  <!-- Kafka Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">Kafka</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill big-data-cloud-progress"></div>
-                    </div>
-                  </li>
-                  <!-- ETL Subcategory -->
-                  <li class="skills-item subcategory">
-                    <div class="title-wrapper">
-                      <h5 class="h5">ETL</h5>
-                    </div>
-                    <div class="skill-progress-bg">
-                      <div class="skill-progress-fill big-data-cloud-progress"></div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-          </div>
-          <div class="split-container">
-            <!-- Cloud Computing Category -->
-            <div class="split-item" id="cloud-computing-category">
-              <!-- Cloud Computing Heading -->
-              <h4 class="h4" style="margin-top: 10px; margin-bottom: 10px;">Cloud Computing</h4>
-              <!-- Subcategories within Cloud Computing Category -->
-              <ul class="subcategories">
-                <!-- Google Cloud Platform (GCP) Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">Google Cloud Platform (GCP)</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill cloud-computing-progress"></div>
-                  </div>
-                </li>
-                <!-- Azure Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">Azure</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill cloud-computing-progress"></div>
-                  </div>
-                </li>
-                <!-- AWS Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">AWS</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill cloud-computing-progress"></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- Statistics Category -->
-            <div class="split-item" id="statistics-category">
-              <!-- Statistics Heading -->
-              <h4 class="h4" style="margin-top: 20px; margin-bottom: 10px;">Statistics</h4>
-              <!-- Subcategories within Statistics Category -->
-              <ul class="subcategories">
-                <!-- Bayesian Inference Subcategory -->
-                <li class="skills-item subcategory">
-                <div class="title-wrapper">
-                  <h5 class="h5">Bayesian Inference</h5>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill statistics-progress"></div>
-                </div>
-                </li>
-                <!-- Hypothesis Testing Subcategory -->
-                <li class="skills-item subcategory">
-                <div class="title-wrapper">
-                  <h5 class="h5">Hypothesis Testing</h5>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill statistics-progress"></div>
-                </div>
-                </li>
-                <!-- T-tests Subcategory -->
-                <li class="skills-item subcategory">
-                <div class="title-wrapper">
-                  <h5 class="h5">T-tests</h5>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill statistics-progress"></div>
-                </div>
-                </li>
-                <!-- Probability Theory Subcategory -->
-                <li class="skills-item subcategory">
-                <div class="title-wrapper">
-                  <h5 class="h5">Probability Theory</h5>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill statistics-progress"></div>
-                </div>
-                </li>
-              </ul>
-            </div>
-            <!-- Tools Category -->
-            <div class="split-item" id="tools-category">
-              <!-- Tools Heading -->
-              <h4 class="h4" style="margin-top: 10px; margin-bottom: 10px;">Tools</h4>
-              <!-- Subcategories within Tools Category -->
-              <ul class="subcategories">
-                <!-- Jupyter Notebooks Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">Jupyter Notebooks</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill tools-progress"></div>
-                  </div>
-                </li>
-                <!-- Kubernetes Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">Kubernetes</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill tools-progress"></div>
-                  </div>
-                </li>
-                <!-- Docker Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">Docker</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill tools-progress"></div>
-                  </div>
-                </li>
-                <!-- VS Code Subcategory -->
-                <li class="skills-item subcategory">
-                  <div class="title-wrapper">
-                    <h5 class="h5">VS Code</h5>
-                  </div>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill tools-progress"></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <style>
-          .split-container {
-            display: flex;
-            justify-content: space-between;
-          }
-
-          .split-item {
-            width: 30%;
-            /* Adjust the width as needed */
-          }
-
-          .subcategories {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-          }
-
-          .skill-progress-fill {
-            height: 10px;
-            /* Adjust the height of the progress bar */
-            background-color: #4caf50;
-            /* Adjust the color of the progress bar */
-            width: 0;
-            /* Start with 0 width */
-            transition: width 1s ease-in-out;
-            /* Add transition for smooth filling effect */
-          }
-
-          .split-item:hover .skill-progress-fill {
-            width: 100%;
-            /* Fill the progress bars on hover */
-          }
-        </style>
-
-
-
-
-
-
-
-
-      </article>
-
-
       <!--
         - #PORTFOLIO
       -->
@@ -1059,7 +416,25 @@
           </div>
 
           <ul class="project-list">
+		  
+            <li class="project-item  active" data-filter-item data-category="all">
+              <a href="https://huggingface.co/spaces/Zavi77/GPTLens" target="_blank">
 
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/gptlens.webp" alt="gptlens" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GPTLens</h3>
+
+                <p class="project-category">LLM based Smart Contract Vulnerability Detection</p>
+
+              </a>
+            </li>
+			
             <li class="project-item  active" data-filter-item data-category="all">
               <a href="https://github.com/AvijeetRanawat/StrategAI" target="_blank">
 
@@ -1074,25 +449,6 @@
                 <h3 class="project-title">StrategAI</h3>
 
                 <p class="project-category">LLM based Dynamic Strategy for Football</p>
-
-              </a>
-            </li>
-
-
-            <li class="project-item  active" data-filter-item data-category="all">
-              <a href="https://github.com/AvijeetRanawat/GPTLens" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/gptlens.webp" alt="gptlens" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">GPTLens</h3>
-
-                <p class="project-category">LLM based Smart Contract Vulnerability Detection</p>
 
               </a>
             </li>
@@ -1246,52 +602,6 @@
 
       </article>
 
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27660.573981363217!2d-84.388058!3d33.7490!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f503a52b080a89%3A0x7b9b0e6d08d8e012!2sAtlanta%2C%20GA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
     </div>
 
   </main>
@@ -1305,6 +615,52 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  
+  
+<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const navLinks = document.querySelectorAll('[data-nav-link]');
+			const sections = document.querySelectorAll('[data-page]');
+			const resumeSection = document.getElementById('resumeDisplay');
+			const iframe = document.querySelector('#resumeDisplay iframe');
+			const pdfPath = './assets/resume.pdf'; // Ensure this is the correct path to your PDF file
+
+			navLinks.forEach(link => {
+				link.addEventListener('click', function() {
+					// Remove active class from all nav links
+					navLinks.forEach(nav => nav.classList.remove('active'));
+					// Add active class to the clicked nav link
+					link.classList.add('active');
+
+					const targetSection = link.getAttribute('data-nav-link') || link.textContent.toLowerCase().trim();
+
+					// Hide all sections initially
+					sections.forEach(section => {
+						section.style.display = 'none';
+					});
+
+					// Special handling for the Resume section
+					if (targetSection === 'resume') {
+						// Set the iframe source if it's not already set
+						if (!iframe.src) {
+							iframe.src = pdfPath;
+						}
+						resumeSection.style.display = 'block'; // Show the resume section
+					} else {
+						// Show the targeted content section
+						const targetContent = document.querySelector(`[data-page="${targetSection}"]`);
+						if (targetContent) {
+							targetContent.style.display = 'block';
+						}
+						// Ensure resume section is hidden if not selected
+						resumeSection.style.display = 'none';
+					}
+				});
+			});
+		});
+
+</script>
+
 
   <!--
     - ionicon link
